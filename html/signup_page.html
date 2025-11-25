@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/login_signup.js"></script>
+</head>
+<body class="login-page">
+    <header>
+        <div class="center-div">
+            <img src="../assets/logo.png" alt="Logo">
+        </div>
+    </header>
+
+    <main>
+        <div class="center-div">
+            <div class="row">
+                <div class="input-container">
+                    <img src="../assets/user.png" alt="Logo" width="45" height="40">
+                    <input id="username" type="text" placeholder="Username" required>
+                </div>
+                <div class="blank-container"></div>
+                <div class="input-container">
+                    <img src="../assets/email.png" alt="Logo" width="35" height="35">
+                    <input id="email" type="email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-container">
+                    <img src="../assets/password.png" alt="Logo" width="35" height="35">
+                    <input id="password" type="password" placeholder="Password" required>
+                </div>
+                <div class="blank-container"></div>
+                <div class="input-container">
+                    <img src="../assets/password.png" alt="Logo" width="35" height="35">
+                    <input id="confirmPassword" type="password" placeholder="Confirm password" required>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="input-container">
+                    <img src="../assets/phone.png" alt="Logo" width="35" height="35">
+                    <input id="phone" type="text" placeholder="Phone number" required>
+                </div>
+                <div class="blank-container"></div>
+                <div class="input-container">
+                    Gender
+                    <div class="blank-container"></div>
+                    <label>
+                        <input type="radio" name="gender" value="male"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Female
+                    </label>
+                </div>
+            </div>
+            <div class="blank-container"></div>
+            <div>
+                <input type="checkbox" id="agree" name="agree" value="" class="checkbox-box">
+                I agree with terms conditions and privacy policy
+            </div>
+            
+            <div class="container-login">
+                <button class="container-login-button" onclick="signUp()">
+                    Sign Up
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

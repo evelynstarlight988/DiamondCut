@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/login_signup.js"></script>
+</head>
+<body class="login-page">
+    <header>
+        <div class="center-div">
+            <img src="../assets/logo.png" alt="Logo">
+        </div>
+        <div class="center-div">
+            <img src="../assets/user_with_circle.png" alt="Logo">
+        </div>
+    </header>
+
+    <main>
+        <div class="center-div">
+            <div class="row">
+                <div class="input-container">
+                    <img src="../assets/user.png" alt="Logo" width="45" height="40">
+                    <input id="username" type="text" placeholder="Username" required>
+                </div>
+                <div class="blank-container"></div>
+                <div class="input-container">
+                    <img src="../assets/password.png" alt="Logo" width="35" height="35">
+                    <input id="password" type="password" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="container-login">
+                <button class="container-login-button" onclick="login()">
+                    LOG IN
+                </button>
+            </div>
+            
+            <div class="blank-container"></div>
+            <div class="sign-up-container">
+                Don’t have an account?
+                <button class="button-sign-up" onclick="goToSignUpPage()">SIGN UP</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

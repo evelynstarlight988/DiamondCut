@@ -1,0 +1,849 @@
+/* CSS Eksternal */
+html, body {
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+    background-size: cover; 
+
+}
+
+.login-page {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(102, 102, 102, 1));
+    background-repeat: no-repeat;
+}
+
+.home-page {
+    background-color: gray;
+    background-repeat: no-repeat;
+}
+
+.showroom-page {
+    background-color: #000000;
+    background-repeat: no-repeat;
+}
+
+.aboutus-page {
+    background-color: #000000;
+    background-repeat: no-repeat;
+}
+
+.cars-page {
+    background-image: linear-gradient(180deg, rgba(255, 214, 0, 1) 1%, rgba(0, 0, 0, 1) 50%);
+    background-repeat: no-repeat;
+}
+
+.center-div {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blank-container {
+    width: 30px;
+    height: 30px;
+}
+
+.input-container {
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row; /* Urutan elemen dari kanan ke kiri */
+    align-items: center; /* Mengatur posisi vertikal elemen */
+    margin-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.input-container {
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row; /* Urutan elemen dari kanan ke kiri */
+    align-items: center; /* Mengatur posisi vertikal elemen */
+    margin-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.username-container input[type="text"] {
+    background-color: transparent; /* Mengatur background input teks menjadi transparan */
+    height: 20px;
+    border: 0px;
+
+}
+
+.input-container input[type="email"],
+.input-container input[type="password"],
+.input-container input[type="text"] {
+    background-color: transparent; /* Mengatur background input teks menjadi transparan */
+    height: 20px;
+    border: 0px;
+    padding-left: 10px;
+}
+
+.container-login {
+    margin-top: 20px;
+    background-image: linear-gradient(180deg,rgba(217, 217, 217, 1),rgba(115, 115, 115, 1));
+    font-weight: 500;
+    text-align: center;
+    max-width: fit-content;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    text-align:center;
+}
+
+.container-login-button {
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    max-width: fit-content;
+    border-radius: 10px;
+    border: none;
+}
+
+.container-login-button:hover {
+    background-color: lightgray; /* Warna latar belakang yang berbeda saat tombol dihover */
+}
+
+.button-sign-up {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.button-sign-up:hover {
+    color: lightgrey; /* Warna latar belakang yang berbeda saat tombol dihover */
+}
+
+.sign-up-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+}
+
+.checkbox-box {
+    cursor: pointer;
+}
+
+
+
+.header-aboutus-page {
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, rgba(175, 174, 174, 0.29), rgba(255, 255, 255, 0.29));
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-cars-page {
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, rgba(74, 71, 71, 0.29), rgba(103, 102, 102, 0.29));
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer {
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    border-radius: 10px;
+    background-color: #555;
+}
+
+.username-container {
+    color: white;
+}
+
+
+.text-container {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: pre-line;
+    padding-bottom: 10px;
+}
+
+.photo-container {
+    max-width: 800px;
+    max-height: max-content;
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(180deg, #FDD1D1, #070000);
+}
+
+.two-cars-image{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.border-radius-element {
+    border-radius: 20px;
+}
+
+.image-stack {
+    position: relative;
+    display: inline-block;
+}
+
+.main-image {
+    display: block;
+    border-radius: 20px;
+}
+
+.border-top-radius {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.car-image {
+    position:absolute;
+    top: 60px;
+    left: 80px;
+}
+
+.top-right-image-top-tier-models {
+    position: absolute;
+    top:50px;
+    right: 40px;
+}
+
+.top-right-image {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+.top-left-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.bottom-left-image {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.center-top-text-top-tier-models {
+    top: 20px;
+    position: absolute;
+    color: black;
+    
+    width: 100%;
+    
+    font-size: 12px; 
+    font-weight: 600;
+    text-align: center;
+    font-style: italic;
+} 
+
+.center-top-text {
+    position: absolute;
+    top: 50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 24px; 
+    font-weight: 600;
+    text-align: center;
+    font-style: italic;
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 0;
+    bottom: 10px;
+    color: black;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden; /* Sembunyikan teks yang meluap */
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Batasi ke 2 baris */
+    -webkit-box-orient: vertical;
+    
+}
+
+.information-text {
+    position: absolute;
+    bottom: 5px; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 12px;
+    width: 200px;
+    font-weight: 300;
+}
+
+.container-stack{
+    width: 300px;
+    height: 200px;
+    background-color: transparent;
+}
+
+.text-content {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* Batasi ke 2 baris */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-row-gap: 70px;
+}
+
+.image-grid .image-item {
+    width: calc(100% / 3); /* Setiap gambar menempati 1/3 dari lebar parent saat lebar layar > 768px */
+    margin-top: 20px; /* Jarak dari atas */
+    margin-left: 200px; /* Jarak dari kiri */
+}
+
+.subtitle {
+    color: #FFD601;
+    font-size: 20px;
+}
+
+.section-content {
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+
+.showroom-1 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.showroom {
+    width: 800px;
+    margin: 0 auto;
+    flex: 0 0 auto; /* Membuat gambar memiliki lebar yang sama dan tidak dapat meregang */
+    margin-left: 30px
+}
+
+
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden; 
+}
+
+
+
+.carousel-slide-top-tier {
+    display: flex;
+    transition: transform 0.5s ease;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 50px;
+}
+
+.carousel-slide-showroom {
+    display: flex;
+    transition: transform 0.5s ease;
+    align-items: center;
+}
+
+.carousel-slide-new-car {
+    display: flex;
+    transition: transform 0.5s ease;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 50px;
+}
+
+.carousel-slide-used-car {
+    display: flex;
+    transition: transform 0.5s ease;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 25px;
+}
+
+.button-carousel {
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.button-carousel-showroom {
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev-top-tier {
+    left: 0;
+}
+
+.next-top-tier {
+    right: 0;
+}
+
+.prev-new-car {
+    left: 0;
+}
+
+.next-new-car {
+    right: 0;
+}
+
+.prev-used-car {
+    left: 0;
+}
+
+.next-used-car {
+    right: 0;
+}
+
+.brand {
+    min-width : 124px;
+    color: #f2f2f2;
+    cursor : pointer;
+    border-radius : 10px;
+    background-color : transparent;
+    border : 1px solid lightgray;
+    text-align: center;
+    margin-left : 10px;
+    padding : 12px;
+}
+.brand:hover {
+    background-color: #555; 
+    cursor: pointer; 
+}
+
+
+.title-information {
+    margin-top: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    align-items: center;
+}
+
+.row-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.top-tier-content {
+    flex: 0 0 auto; /* Membuat gambar memiliki lebar yang sama dan tidak dapat meregang */
+    margin-right: 20px; /* Spasi antara gambar */
+}
+
+.car-content {
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #D9D9D9;
+    padding-bottom: 20px;
+    width: 400px;
+    height: 300px;
+    margin-left: 20px;
+}
+
+.used-car-content {
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #D9D9D9;
+    padding-bottom: 20px;
+    min-height: 300px;
+    width: 400px;
+    margin-left: 20px;
+}
+
+.title-car {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+}
+
+.price-car {
+    margin-top: 7px;
+    font-size: 20px;
+    color: #FF0000;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+}
+
+.desc-car {
+    margin-top: 12px;
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    text-align: justify;
+}
+
+.top-tier-models-container {
+    width: 100%;
+    height: max-content;
+    border-radius: 20px;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(153, 153, 153, 1));
+}
+
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+}
+
+.slides {
+    display: none;
+    width: 100%;
+}
+
+.active {
+    display: block;
+}
+
+.prev-top, .next-top {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+	background-color:grey;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+	border-color: #f2f2f2;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next-top {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev-top:hover, .next-top:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.account {
+    margin-left: auto; /* Pushes the account to the far right */
+}
+
+.hover-image-1:hover {
+    content: url('../assets/showroom_car11.png');
+}
+
+.hover-image-2:hover {
+    content: url('../assets/showroom_car21.png');
+}
+
+.hover-image-3:hover {
+    content: url('../assets/showroom_car31.png');
+}
+
+.hover-image-4:hover {
+    content: url('../assets/showroom_car41.png');
+}
+
+.hover-image-5:hover {
+    content: url('../assets/showroom_car51.png');
+}
+
+.hover-image-6:hover {
+    content: url('../assets/showroom_car61.png');
+}
+
+.link {
+    text-decoration: none;
+}
+.dropdown {
+    border-radius: 10px;
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown a {
+    padding: 12px 16px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #575757;
+}
+
+.dropdown.show {
+    display: block;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.color-white {
+    color: white;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.padding-left-5 {
+    padding-left: 5px;
+}
+
+.padding-left-15 {
+    padding-left: 15px;
+}
+
+.padding-right-15 {
+    padding-right: 15px;
+}
+
+.padding-bot-10 {
+    padding-bottom: 10px;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.padding-top-30 {
+    padding-top: 30px;
+}
+
+.margin-left-10 {
+    margin-left: 10px;
+}
+
+.color-black {
+    color: black;
+}
+
+.font-size-20 {
+    font-size: 14;
+}
+
+.inria-font {
+    font-family: "Inria Serif", serif;   
+    font-weight: 200;
+}
+
+.libre-font {
+    font-family: 'Libre Baskerville', serif; 
+    font-weight: 200;
+}
+
+.italianno-font {
+    font-family: 'Italianno', cursive;
+}
+
+.font-size-48 {
+    font-size: 48px;
+}
+
+
+
+
+/* Aturan responsif untuk layar di bawah 768px */
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .row-space-between {
+        flex-direction: column;
+    }
+
+    .blank-container {
+        display: none;
+    }
+
+    .section-content {
+        width: 300px;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    nav ul {
+        display: block; /* Mengatur tata letak daftar navigasi menjadi blok di layar kecil */
+    }
+
+    nav ul li {
+        display: block; /* Mengatur tata letak item navigasi menjadi blok di layar kecil */
+        margin-bottom: 10px; /* Menambahkan jarak antara item navigasi di layar kecil */
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0; /* Menghapus jarak bawah untuk item navigasi terakhir di layar kecil */
+    }
+
+    .main-image {
+        display: block;
+        width: 300px; /* Adjust to screen size */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px;
+    }
+
+    .top-right-image {
+        position: absolute;
+        width: 50px; /* Adjust to screen size */
+        height: auto; /* Maintain aspect ratio */
+        right: 50px;
+        top: 55px;
+    }
+
+    .center-top-text-top-tier-models {
+        top: 1px;
+        position: absolute;
+        color: black;
+        font-size: 12px; 
+        text-align: center;
+        font-style: italic;
+    } 
+
+    .center-top-text {
+        top: 10px;
+        position: absolute;
+        color: black;
+        font-size: 16px; 
+        text-align: center;
+        font-style: italic;
+    }
+
+    .carousel-slide-top-tier {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .bottom-text {
+        -webkit-line-clamp: 2; /* Batasi ke 1 baris pada layar kecil */
+    }
+
+    .md-visibility-hidden{
+        visibility: hidden;
+    }
+
+    .carousel-slide-top-tier {
+        margin-left: 0;
+        margin-right: 0;
+    }
+	
+	.car-content {
+		height: 500px; 
+	}
+
+}

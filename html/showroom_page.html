@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/showroom-page.js"></script>
+    <script src="../javascript/login_signup.js"></script>
+</head>
+<body class="showroom-page">
+    <header class="header-cars-page">
+        <img src="../assets/logo.png" alt="Logo" width="100" height="100">
+        <div class="row">
+            <nav>
+                <ul>
+                    <li><a href="../html/home_page.html">Home</a></li>
+                    <li><a href="../html/cars_page.html">Cars</a></li>
+                    <li><a href="../html/aboutus_page.html">About Us</a></li>
+                    <li class="account" >
+                        <a id="usernameDisplay" onclick="toggleDropdown(event)"></a>
+                        <div class="dropdown" id="accountDropdown">
+                            <a onclick="logout()">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <img src="../assets/header_cars_page.png" alt="Logo"  width="300" height="70">
+        </div>
+        <div class="title-information center-div inria-font font-size-48">SHOWROOM</div>
+        <div class="showroom-1 center-div">
+            <div class="image-stack">
+                <img src="../assets/showroom.png" class="main-image" alt="Logo" width="1000" height="auto">
+                <img src="../assets/logo.png" class="bottom-left-image" alt="Logo"width="100" height="auto">
+            </div>
+        </div>
+        <div class="blank-container"></div>
+        <div class="title-information center-div inria-font font-size-48">GALLERY</div>
+         <!-- // -->
+         <div class="carousel-container">
+            <button class="prev button-carousel-showroom" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel-slide-showroom">
+                <div class="showroom center-div">
+                    <div class="image-stack">
+                        <img src="../assets/showroom2.png" class="main-image border-top-radius" alt="Logo" width="700" height="auto">
+                        <img src="../assets/logo.png" class="top-left-image" alt="Logo"width="100" height="auto">
+                    </div>
+                    
+                    <div class="photo-container">
+                        <div class="text-container inria-font">
+                            DIAMONDCUT MOTORS 
+                            987 Evergreen, 
+                            Jakarta, Indonesia
+                        </div>
+                        <img src="../assets/showroom_car1.png" class="border-radius-element hover-image-1" alt="Logo"width="300" height="auto">
+                        
+                        <div class="row two-cars-image">
+                            <img src="../assets/showroom_car2.png" class="border-radius-element hover-image-2" alt="Logo"width="auto" height="175">
+                            <img src="../assets/showroom_car3.png" class="border-radius-element hover-image-3" alt="Logo"width="auto" height="175">
+                        </div>
+                    </div>
+                </div>
+                <div class="showroom center-div">
+                    <div class="image-stack">
+                        <img src="../assets/showroom_2.png" class="main-image border-top-radius" alt="Logo" width="700" height="auto">
+                        <img src="../assets/logo.png" class="top-left-image" alt="Logo"width="100" height="auto">
+                    </div>
+                    
+                    <div class="photo-container">
+                        <div class="text-container inria-font">
+                            DIAMONDCUT MOTORS 
+                            987 Evergreen, 
+                            Jakarta, Indonesia
+                        </div>
+                        <img src="../assets/showroom_car4.png" class="border-radius-element hover-image-4" alt="Logo"width="300" height="auto">
+                        
+                        <div class="row two-cars-image">
+                            <img src="../assets/showroom_car5.png" class="border-radius-element hover-image-5" alt="Logo"width="auto" height="175">
+                            <img src="../assets/showroom_car6.png" class="border-radius-element hover-image-6" alt="Logo"width="auto" height="175">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="next-top-tier button-carousel-showroom" onclick="nextSlide()">&#10095;</button>
+        </div>
+         <!-- // -->
+        
+
+        
+       
+        
+    </main>
+    <footer>
+        <div class="footer row">
+            <div>© 2024 by PT DiamondCut Motor</div>
+            <div>
+                <div class="font-weight-600 color-white padding-bot-10">Contact Us</div>
+                <div class="flex-row color-white align-items-center ">
+                    <img src="../assets/phone.png" alt="Logo" width="20" height="20">
+                    <div>&nbsp;&nbsp;(+62)77 1998 1998</div>
+                </div>
+                <div class="flex-row color-white align-items-center">
+                    <img src="../assets/email.png" alt="Logo" width="30" height="30">
+                    <div>diamondcut_Motors@gmail.co.id</div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>

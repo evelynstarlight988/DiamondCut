@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/home-page.js"></script>
+    <script src="../javascript/login_signup.js"></script>
+</head>
+<body class="home-page">
+    <header class="header-cars-page">
+        <img src="../assets/logo.png" alt="Logo" width="100" height="100">
+        <div class="row">
+            <nav>
+                <ul>
+                    <li><a href="../html/cars_page.html">Cars</a></li>
+                    <li><a href="../html/showroom_page.html">Showroom</a></li>
+                    <li><a href="../html/aboutus_page.html">About Us</a></li>
+                    <li class="account" >
+                        <a id="usernameDisplay" onclick="toggleDropdown(event)"></a>
+                        <div class="dropdown" id="accountDropdown">
+                            <a onclick="logout()">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <img src="../assets/header_cars_page.png" alt="Logo"  width="300" height="70">
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-slide-top-tier">
+				<div class="top-tier-content slides active center-div">
+                    <div class="image-stack">
+                        <img src="../assets/RR.png" class="main-image" alt="Logo" width="700" height="auto">
+                        <img src="../assets/RR_logo.png" class="top-right-image" alt="Logo"width="150" height="auto">
+                        <div class="center-top-text">Rolls-Royce La Rose Noire Droptail</div>
+                        <div class="row bottom-text">
+                            <img src="../assets/logo.png" alt="Logo" width="50" height="50" class="margin-left-10 md-visibility-hidden">
+                            <div class="desc-car">
+                                Powered by Ferrari's famous V8 turbo engine. Voted International Engine of the Year four times in a row. The only changes come in the form of new cam profiles and a speed sensor in order to reach 5,000 RPM. There are new anti-pollution filters too.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-tier-content slides center-div">
+                    <div class="image-stack">
+                        <img src="../assets/sf90.png" class="main-image" alt="Logo" width="700" height="auto">
+                        <img src="../assets/ferrari_logo.png" class="top-right-image" alt="Logo"width="150" height="auto">
+                        <div class="center-top-text">SF90 Spider</div>
+                        <div class="row bottom-text">
+                            <img src="../assets/logo.png" alt="Logo" width="50" height="50" class="margin-left-10 md-visibility-hidden">
+                            <div class="desc-car">
+                                The SF90 Spider is Ferrari's high-performance convertible, featuring a hybrid powertrain and stunning design. With speeds over 200 mph and rapid acceleration, it delivers an exhilarating driving experience.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-tier-content slides center-div">
+                    <div class="image-stack">
+                        <img src="../assets/lambo.png" class="main-image" alt="Logo" width="700" height="auto">
+                        <img src="../assets/lamborghini_logo.png" class="top-right-image" alt="Logo"width="150" height="auto">
+                        <div class="center-top-text">Lamborghini Aventador</div>
+                        <div class="row bottom-text">
+                            <img src="../assets/logo.png" alt="Logo" width="50" height="50" class="margin-left-10 md-visibility-hidden">
+                            <div class="desc-car">
+                                The Lamborghini Aventador is a powerful supercar with a sleek design and high-performance V12 engine. It's known for its speed, style, and advanced features, offering an exhilarating driving experience.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<button class="prev-top" onclick="changeSlide(-1)">&#10094;</button>
+				<button class="next-top" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="blank-container"></div>
+        <div class="title-information center-div color-black">TOP TIER MODELS</div>
+        <div class="blank-container"></div>
+
+        <div class="top-tier-models-container row">
+            <div class="image-grid">
+                <div class="image-stack container-stack">
+                    <img src="../assets/carrera.png" class="car-image" alt="Logo" width="150" height="auto">
+                    <img src="../assets/porche_logo.png" class="top-right-image-top-tier-models" alt="Logo"width="40" height="auto">
+                    <div class="center-top-text-top-tier-models">911 Carrera S</div>
+                    <div class="information-text">
+                        For price inquiries, please contact your official local dealer
+                    </div>
+                </div>
+                <div class="image-stack container-stack">
+                    <img src="../assets/carrera.png" class="car-image" alt="Logo" width="150" height="auto">
+                    <img src="../assets/pagani_logo.png" class="top-right-image-top-tier-models" alt="Logo"width="50" height="auto">
+                    <div class="center-top-text-top-tier-models">Zonda HP Barchetta</div>
+                    <div class="information-text">
+                        For price inquiries, please contact your official local dealer
+                    </div>
+                </div>
+                <div class="image-stack container-stack">
+                    <img src="../assets/veneno.png" class="car-image" alt="Logo" width="150" height="auto">
+                    <img src="../assets/lamborghini_logo.png" class="top-right-image-top-tier-models" alt="Logo"width="40" height="auto">
+                    <div class="center-top-text-top-tier-models">Veneno Roadster</div>
+                    <div class="information-text">
+                        For price inquiries, please contact your official local dealer
+                    </div>
+                </div>
+                <div class="image-stack container-stack">
+                    <img src="../assets/buggati.png" class="car-image" alt="Logo" width="150" height="auto">
+                    <img src="../assets/buggati_logo.png" class="top-right-image-top-tier-models" alt="Logo"width="50" height="auto">
+                    <div class="center-top-text-top-tier-models">Bugatti La Voiture Noire</div>
+                    <div class="information-text">
+                        For price inquiries, please contact your official local dealer
+                    </div>
+                </div>
+                <div class="image-stack container-stack">
+                    <img src="../assets/laferrari.png" class="car-image" alt="Logo" width="150" height="auto">
+                    <img src="../assets/ferrari_logo.png" class="top-right-image-top-tier-models" alt="Logo"width="50" height="auto">
+                    <div class="center-top-text-top-tier-models">Laferrari Aperta</div>
+                    <div class="information-text">
+                        For price inquiries, please contact your official local dealer
+                    </div>
+                </div>
+                <div class="image-stack container-stack">
+                    <img src="../assets/i8.png" class="car-image" alt="Logo" width="175" height="auto">
+                    <img src="../assets/bmw_logo.png" class="top-right-image-top-tier-models" alt="Logo"width="40" height="auto">
+                    <div class="center-top-text-top-tier-models">I8</div>
+                    <div class="information-text">
+                        For price inquiries, please contact your official local dealer
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footer row">
+            <div>© 2024 by PT DiamondCut Motor</div>
+            <div>
+                <div class="font-weight-600 color-white padding-bot-10">Contact Us</div>
+                <div class="flex-row color-white align-items-center ">
+                    <img src="../assets/phone.png" alt="Logo" width="20" height="20">
+                    <div>&nbsp;&nbsp;(+62)77 1998 1998</div>
+                </div>
+                <div class="flex-row color-white align-items-center">
+                    <img src="../assets/email.png" alt="Logo" width="30" height="30">
+                    <div>diamondcut_Motors@gmail.co.id</div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>

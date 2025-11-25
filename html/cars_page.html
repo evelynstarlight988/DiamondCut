@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/cars-page.js"></script>
+    <script src="../javascript/login_signup.js"></script>
+</head>
+<body class="cars-page">
+    <header class="header-cars-page">
+        <img src="../assets/logo.png" alt="Logo" width="100" height="100">
+        <div class="row">
+            <nav>
+                <ul>
+                    <li><a href="../html/home_page.html">Home</a></li>
+                    <li><a href="../html/showroom_page.html">Showroom</a></li>
+                    <li><a href="../html/aboutus_page.html">About Us</a></li>
+                    <li class="account" >
+                        <a id="usernameDisplay" onclick="toggleDropdown(event)"></a>
+                        <div class="dropdown" id="accountDropdown">
+                            <a onclick="logout()">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <img src="../assets/header_cars_page.png" alt="Logo"  width="300" height="70">
+        </div>
+        <div class="carousel-container">
+            <button class="prev button-carousel" onclick="prevSlideBrand()">&#10094;</button>
+            
+            <div class="carousel-slide" id="carouselBrand">
+                
+            </div>
+            <button class="next button-carousel" onclick="nextSlideBrand()">&#10095;</button>
+        </div>
+        
+        <div class="title-information center-div libre-font font-size-48">NEW</div>
+        <div class="blank-container"></div>
+        <div class="carousel-container">
+            <button class="prev-new-car button-carousel" onclick="prevSlideNewCar()">&#10094;</button>
+            <div class="carousel-slide-new-car">
+                <div class="car-content">
+                    <div class="row-space-between">
+                        <img src="../assets/logo.png" alt="Logo" width="50" height="50">
+                        <img src="../assets/car1.png" alt="Logo"width="250" height="150">
+                        <img src="../assets/ferrari.png" alt="Logo" width="75" height="50">
+                    </div>
+                    <div class="title-car">Ferrari Roma Spider (2024)</div>
+                    <div class="price-car">±$282,000</div>
+                    <div class="desc-car">
+                        Powered by Ferrari's famous V8 turbo engine. Voted International Engine of the Year four times in a row. The only changes come in the form of new cam profiles and a speed sensor in order to reach 5,000 RPM. There are new anti-pollution filters too.
+                    </div>
+                </div>
+                <div class="car-content">
+                    <div class="row-space-between">
+                        <img src="../assets/logo.png" alt="Logo" width="50" height="50">
+                        <img src="../assets/Spectre.png" alt="Logo"width="250" height="150">
+                        <img src="../assets/RR_logo.png" alt="Logo" width="75" height="auto">
+                    </div>
+                    <div class="title-car">Rolls Royce Spectre (2024)</div>
+                    <div class="price-car">±$423,000</div>
+                    <div class="desc-car">
+                        Embodies a bold and uncompromising character, expressed through its sleek and sculpted design. Its straightened lines convey a sense of excitement, with the fender line suggesting dynamism, and the waft line tapering sharply at the front, creating the impression of movement even at rest.
+                    </div>
+                </div>
+                <div class="car-content">
+                    <div class="row-space-between">
+                        <img src="../assets/logo.png" alt="Logo" width="50" height="50">
+                        <img src="../assets/revuelto.png" alt="Logo"width="250" height="150">
+                        <img src="../assets/lamborghini_logo.png" alt="Logo" width="75" height="auto">
+                    </div>
+                    <div class="title-car">Lamborghini Revuelto (2024)</div>
+                    <div class="price-car">±$609,000</div>
+                    <div class="desc-car">
+                        Proportions with strong, sculpted lines that promise a new future. Explore a silhouette that embodies confidence, power, strength, and groundbreaking aerodynamics. The unmistakable roar of the V12 aspirated engine coupled with powerful electric motors.
+                    </div>
+                </div>
+                <div class="car-content padding-left-15 padding-right-15">
+                    <div class="row-space-between padding-top-30">
+                        <img src="../assets/logo.png" alt="Logo" width="50" height="50">
+                        <img src="../assets/car3.png" alt="Logo"width="auto" height="100">
+                        <img src="../assets/pagani_logo.png" alt="Logo" width="75" height="auto">
+                    </div>
+                    <div class="title-car padding-top-10">Pagani Utopia (2024)</div>
+                    <div class="price-car">±$3,500,000</div>
+                    <div class="desc-car">
+                        Active aerodynamics and electronically controlled shock absorbers ensure optimal performance in all driving conditions. The double-wishbone suspension, made from aerospace aluminum alloy, benefits from extensive development on the track-focused R version of the Huayra.
+                    </div>
+                </div>
+            </div>
+            <button class="next-new-car button-carousel" onclick="nextSlideNewCar()">&#10095;</button>
+        </div>
+        
+        <div class="title-information center-div libre-font font-size-48">SECONDHAND</div>
+        <div class="blank-container"></div>
+        <div class="carousel-container">
+            <button class="prev-used-car button-carousel" onclick="prevSlideUsedCar()">&#10094;</button>
+            <div class="carousel-slide-used-car">
+                <div class="used-car-content">
+                    <div class="row-space-between">
+                        <img src="../assets/logo.png" alt="Logo" width="50" height="50">
+                        <img src="../assets/cayman.png" alt="Logo"width="250" height="150">
+                        <img src="../assets/porche_logo.png" alt="Logo" width="75" height="auto">
+                    </div>
+                    <div class="title-car padding-top-10">Porsche Cayman S (2006)</div>
+                    <div class="price-car">±$35,000</div>
+                    <div class="desc-car">
+                        Stands out for its mid-engine layout, sleek design, powerful performance, superb handling, balanced weight distribution, and upscale interior. It's a top choice for those who seek a thrilling driving experience.
+                    </div>
+                </div>
+                <div class="used-car-content">
+                    <div class="row-space-between">
+                        <img src="../assets/logo.png" alt="Logo" width="50" height="50">
+                        <img src="../assets/phantom.png" alt="Logo"width="250" height="150">
+                        <img src="../assets/RR_logo.png" alt="Logo" width="75" height="auto">
+                    </div>
+                    <div class="title-car padding-top-10">Rolls-Royce Phantom (2016)</div>
+                    <div class="price-car">±$220,000</div>
+                    <div class="desc-car">
+                        Handcrafted with extreme attention to detail. It's famous for its iconic design and offers a wide range of customization options. Inside, it's incredibly quiet and packed with modern technology.
+                    </div>
+                </div>
+                <div class="used-car-content">
+                    <div class="row-space-between padding-top-30">
+                        <img src="../assets/logo.png" alt="Logo" width="50" height="50">
+                        <img src="../assets/maybach.png" alt="Logo"width="auto" height="125">
+                        <img src="../assets/mercy_logo.png" alt="Logo" width="75" height="auto">
+                    </div>
+                    <div class="title-car padding-top-10">Mercedes-Benz Maybach S680 4MATIC (2023)</div>
+                    <div class="price-car">±$238,000</div>
+                    <div class="desc-car">
+                        Unmatched luxury, spacious interior, powerful performance, advanced technology, and exclusive design features, making it the pinnacle of automotive opulence.
+                    </div>
+                </div>
+                <div class="used-car-content">
+                    <div class="row-space-between padding-top-30">
+                        <img src="../assets/logo.png" alt="Logo" width="50" height="50">
+                        <img src="../assets/series62.png" alt="Logo"width="auto" height="100">
+                        <img src="../assets/cadilac_logo.png" alt="Logo" width="75" height="auto">
+                    </div>
+                    <div class="title-car padding-top-10">Cadillac Series 62 Convertible (1959)</div>
+                    <div class="price-car">±$250,000</div>
+                    <div class="desc-car">
+                        Special for its classic American style, luxurious comfort, and the fun of open-air driving. With its powerful V8 engine and iconic design, it's a symbol of mid-20th century automotive luxury and style.
+                    </div>
+                </div>
+            </div>
+            <button class="next-used-car button-carousel" onclick="nextSlideUsedCar()">&#10095;</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer row">
+            <div>© 2024 by PT DiamondCut Motor</div>
+            <div>
+                <div class="font-weight-600 color-white padding-bot-10">Contact Us</div>
+                <div class="flex-row color-white align-items-center ">
+                    <img src="../assets/phone.png" alt="Logo" width="20" height="20">
+                    <div>&nbsp;&nbsp;(+62)77 1998 1998</div>
+                </div>
+                <div class="flex-row color-white align-items-center">
+                    <img src="../assets/email.png" alt="Logo" width="30" height="30">
+                    <div>diamondcut_Motors@gmail.co.id</div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
